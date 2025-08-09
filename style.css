@@ -66,6 +66,25 @@ body {
     min-height: 100vh;
 }
 
+.container {
+    display: flex;
+    gap: 10x;
+    padding: 10x;
+    background: lightgrey
+}
+
+h1 {
+    flex: 1;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    color: thistle;
+}
+
+@media (max-width: 600px)  {
+.container   
+}
+
 footer {
     text-align: center;
     padding: 15px;
