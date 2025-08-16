@@ -3,140 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Godswill Innocent - Profile</title>
+  <title>Jgem Accessories</title>
 
   <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Godswill Innocent</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Jgem Accessories</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#handbags">Handbags</a></li>
+            <li class="nav-item"><a class="nav-link" href="#shoes">Shoes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#shirts">Shirts</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skirts">Skirts</a></li>
+            <li class="nav-item"><a class="nav-link" href="#jewelry">Jewelry</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
-  <!-- Profile Header -->
-  <header class="py-5 text-center text-white" style="background-color: #2c3e50;">
-    <div class="container">
-      <img src="profile.jpg" class="rounded-circle mb-3" alt="Profile" width="150">
-      <h1 class="fw-bold">Godswill Innocent</h1>
-      <p class="text-light">Frontend Developer | Tech Enthusiast</p>
-      <a href="#contact" class="btn btn-primary">Contact Me</a>
-    </div>
+    </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="py-5">
+  <!-- Hero Section -->
+  <section class="hero text-center py-5 bg-light">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <img src="profile.jpg" class="img-fluid rounded" alt="About">
-        </div>
-        <div class="col-md-8">
-          <h2>About Me</h2>
-          <p>
-            I’m a passionate web developer with experience building responsive and user-friendly websites. 
-            My goal is to create designs that are both functional and beautiful.
-          </p>
-        </div>
+      <h2>Exclusive Accessories for Every Style</h2>
+      <p class="lead">Find handbags, shoes, shirts, skirts, and jewelry to complement your look.</p>
+      
+      <div class="input-group my-3 w-50 mx-auto">
+        <input type="text" class="form-control" placeholder="Search">
+        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="d-flex justify-content-center gap-3">
+        <div><i class="fas fa-user"></i> Account</div>
+        <div><i class="fas fa-question-circle"></i> Help</div>
+        <div>🛒 Cart: <span id="cart-count">0</span></div>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4 text-center">Skills</h2>
-      <div class="row text-center">
-        <div class="col-md-3 col-6 mb-3">
-          <div class="p-3 border rounded">HTML5</div>
-        </div>
-        <div class="col-md-3 col-6 mb-3">
-          <div class="p-3 border rounded">CSS3</div>
-        </div>
-        <div class="col-md-3 col-6 mb-3">
-          <div class="p-3 border rounded">JavaScript</div>
-        </div>
-        <div class="col-md-3 col-6 mb-3">
-          <div class="p-3 border rounded">Bootstrap 5</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center">Projects</h2>
+  <!-- Product Sections -->
+  <div class="container py-5">
+    <!-- Example: Handbags -->
+    <section id="handbags" class="mb-5">
+      <h2 class="mb-4">Handbags</h2>
       <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <img src="my own.jpg" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title">Portfolio Website</h5>
-              <p class="card-text">A personal website to showcase my work and skills.</p>
-              <a href="#" class="btn btn-primary">View Project</a>
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <img src="A bag.JPG" class="card-img-top" alt="Handbag 1">
+            <div class="card-body text-center">
+              <p class="card-title">Leather Tote Bag</p>
+              <p class="text-primary fw-bold">$45</p>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <img src="my own.jpg" class="card-img-top" alt="Project 2">
-            <div class="card-body">
-              <h5 class="card-title">To-Do App</h5>
-              <p class="card-text">A task management web app with user authentication.</p>
-              <a href="#" class="btn btn-primary">View Project</a>
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <img src="classic bag.JPG" class="card-img-top" alt="Handbag 2">
+            <div class="card-body text-center">
+              <p class="card-title">Mini Crossbody</p>
+              <p class="text-primary fw-bold">$35</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <img src="My bad 1.JPG" class="card-img-top" alt="Handbag 3">
+            <div class="card-body text-center">
+              <p class="card-title">Elegant Clutch</p>
+              <p class="text-primary fw-bold">$25</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4 text-center">Contact Me</h2>
-      <form class="w-75 mx-auto">
-        <div class="mb-3">
-          <label for="fullname" class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="fullname" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="4"></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <!-- Repeat the same pattern for Shoes, Shirts, Skirts, Jewelry -->
+    <!-- Just replace the IDs, titles, and product details -->
+  </div>
 
-
+  <!-- Pagination -->
+  <div class="container my-4">
+    <nav>
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">&laquo; Prev</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next &raquo;</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <!-- Footer -->
-  <footer class="text-white text-center py-3" style="background-color: #2c3e50;">
-    &copy; 2025 Godswill Innocent. All rights reserved.
+  <footer class="footer bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>Jgem Accessories offers a curated collection of fashion essentials, combining elegance with affordability.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p>Email: jgemaccessories@gmail.com</p>
+          <p>Phone: +234 812 345 6789</p>
+          <p>Address: 12 Fashion Street, Lagos, Nigeria</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Shop</h5>
+          <p>Browse categories: Handbags, Shoes, Shirts, Skirts, Jewelry</p>
+          <p>Special offers every week — stay tuned!</p>
+        </div>
+      </div>
+      <p class="text-center mt-3">&copy; 2025 Jgem Accessories. All rights reserved.</p>
+    </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

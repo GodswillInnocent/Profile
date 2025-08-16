@@ -1,93 +1,229 @@
-header {
-    background-color: #003366;
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: rgb(224, 34, 94);
     color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-nav ul {
+    padding: 15px;
     display: flex;
-    gap: 20px;
-    list-style: none;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-nav ul li a {
-    color: white;
-}
-
-img {
-    width: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 10px auto;
-}
-
-nav ul {
+/* Navigation */
+.header nav ul {
     display: flex;
-    gap: 20px;
-    list-style: none;
     justify-content: center;
+    gap: 20px;
     padding: 0;
+    list-style: none;
+    margin: 10px 0 0 0;
 }
 
-nav ul li a {
+.header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+.header nav ul li a:hover {
     color: lightblue;
 }
 
-img {
-    width: 150px;
+/* Header actions (search, account, help, cart) */
+.header-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 10px;
+}
+
+/* Search box */
+.search-box {
+    position: relative;
+    display: inline-block;
+}
+
+.search-box input {
+    padding: 5px 30px 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    height: 30px;
+}
+
+.search-box i {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+}
+
+/* Circle icons for account/help */
+.circle-icon {
+    width: 28px;
+    height: 28px;
+    border: 2px solid #ff69b4;
     border-radius: 50%;
-    display: block;
-    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #ff69b4;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.circle-icon:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+/* Cart counter */
+.cart-counter {
+    background: #ff69b4;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 30px;
+}
+
+.highlight-box {
+    background-color: #ffe4f2;
+    border: 1px solid #ff69b4;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.highlight-box p {
+    margin: 0;
+}
+
+/* Product sections */
+.section {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Cart counter - no background by default */
+.cart-counter {
+    border: 2px solid #ff69b4;
+    border-radius: 20px;
+    padding: 5px 12px;
+    color: #ff69b4;
+    font-weight: bold;
+    background: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for cart, account, and help */
+.cart-counter:hover,
+.circle-icon:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+.product {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-
-ul {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.container {
-    display: flex;
-    gap: 10x;
-    padding: 10x;
-    background: lightgrey
-}
-
-h1 {
-    flex: 1;
+.price {
     font-weight: bold;
-    align-items: center;
-    display: flex;
-    color: thistle;
+    color: #189b2a;
 }
 
-@media (max-width: 600px)  {
-.container   
-}
-
-footer {
+.pagination {
     text-align: center;
-    padding: 15px;
-    background-color: #003366; /* optional for better look */
+    margin: 20px 0;
+}
+
+.pagination a {
+    color: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.pagination a:hover {
+    background-color: #f48fb1; /* pink hover */
     color: white;
+    border-color: #f48fb1;
+}
+
+.pagination a.active {
+    background-color: #f48fb1;
+    color: white;
+    border: 1px solid #f48fb1;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    max-width: 300px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: rgb(246, 246, 126);
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #3d3c3c;
+    padding-top: 10px;
+    font-size: 0.9em;
 }
